@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  font-size: 1.5em;
+}
+
+/* leave space for the fixed nav */
+body {
+  padding-top: 70px;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#map {
+  display: flex;
+  height: 100%;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+
+.zone {
+  min-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  background: #f0f0f0;
+  border-right: 2px solid #ccc;
+  color: #000000;
+  padding: 2rem;
+}
+
+.zone h1{
+  margin-bottom: 10px;
+}
+.zone h2 {
+  margin-bottom: 10px;
+}
+.zone h3 {
+  margin-bottom: 10px;
+}
+
+.icons img {
+  width: 50px;
+  margin: 5px;
+}
+
+/* ===== Top Navigation Bar ===== */
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  z-index: 2000;
+  padding: 0.65em 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+#top-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#top-nav li {
+  margin: 0 20px;
+}
+
+#top-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+#top-nav a:hover {
+  color: #00bcd4;
+}
+
+/* Active nav style */
+#top-nav a.active {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 2px;
+}
+
+/* ===== Arrow buttons ===== */
+.arrowLeft,
+.arrowRight {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1500;
+  outline: none;
+}
+
+.arrowLeft {
+  left: 12px;
+}
+
+.arrowRight {
+  right: 12px;
+}
+
+.arrowLeft img,
+.arrowRight img {
+  width: 48px;
+  height: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* disabled (invisible) state for arrows */
+.arrowLeft[disabled],
+.arrowRight[disabled] {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* small responsive tweak */
+@media (max-width: 600px) {
+  #top-nav li { margin: 0 8px; }
+  .arrowLeft img, .arrowRight img { width: 40px; }
+}
+
+.icons a {
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+

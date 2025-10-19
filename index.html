@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connor Achilles - Online Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top navigation -->
+  <nav id="top-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="game-container">
+    <div id="map">
+
+      <!-- Zone 1: Introduction -->
+      <section class="zone" id="intro">
+        <h1>Connor Achilles</h1>
+        <img src="Assets/Connor.png" alt="CA Picture" width="400">
+        <!-- REMOVE the arrow markup from inside sections (we use global arrows below) -->
+      </section>
+
+      <!-- Zone 2: Experience -->
+      <section class="zone" id="experience">
+        <h2>Experience</h2>
+        <h3>Prendergast School, July 2022 - Present</h3>
+	<ul>
+          <li>Teacher of Computer Science</li>
+          <li>Duke of Edinburgh Coordinator</li>
+	  <li>Acting Head of Computing</li>
+	  <li>Leading school trips</li>
+	</ul>
+      </section>
+
+      <!-- Zone 3: Education --> 
+      <section class="zone" id="education">
+	<h2>Education</h2> 
+	<p>University of Sussex, Computer Science and Artificial Intelligence BSc (Hons)</p>
+	<p>John Taylor High School, Computer Science A-Level (B), Business BTEC (A, A)</p>
+	<p>Paget High School, GCSEs</p>
+      </section>
+
+      <!-- Zone 4: Skills -->
+      <section class="zone" id="skills">
+	<h2>Skills</h2>
+	<p>My leadership skills have been paramount in my career as a teacher, both in the classroom and in my department. Onboarding new staff and introducing them to our systems, curriculum, and assessment schedule.</p>
+	<p>Taking on the coordinator of DofE has strengthened my leadership skills, tested my resilience, and allowed me to grow as a teacher outside of the classroom. Through this new responsibility, I have been working closely with staff, students, and parents to promote environmental awareness, navigation, and community engagement.</p>
+      </section>
+
+      <!-- Zone 5: Curriculum -->
+      <section class="zone" id="curriculum">
+	<h2>Curriculum Building</h2>
+	<p>I believe that programming and robotics should be accessible and fun at all levels. While teaching the current robotics unit to a Year 8 class last year, I noticed most students had difficulty with the number of programmable components and how they interact with each other, resulting in very few successful deployments of remote-controlled cars. As a response to this, I redeveloped the lesson to better support students with a scaffolded resource, which resulted in increased student engagement, a calm environment to work in, and greater success in functioning robots, giving them a real-world result of their efforts. </p>
+	<p>The department has recently bought new robotics that I hope to integrate into the curriculum to make complex tasks more inclusive while encouraging computational thinking. As Head of Department, I intend to further utilise these new technologies to develop greater schemes of work that will increase student attainment and foster a love of learning. </p>
+	<p>Along with this, I would look to embed digital literacy thoroughly throughout KS3 as we still take on GCSE and sixth form students that seem to be lacking computer skills that are necessary for their education and life beyond school. This includes, but is not limited to, the ability to take screenshots, create well-named file paths, and understanding how to export files into different file types.</p>
+      </section>
+
+      <!-- Zone 6: Hobbies -->
+      <section class="zone" id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Over the years, I have had many hobbies</p>
+        <ul>
+          <li>Flat Track racing in the DTRA</li>
+          <li>Knitting</li>
+          <li>Crochet</li>
+          <li>Photography</li>
+          <li>Coding in HTML, Python, C#, and Java</li>
+	  <li>An avid Formula 1 fan</li>
+        </ul>
+      </section>
+
+      <!-- Zone 7: Contact -->
+      <section class="zone" id="contact">
+        <h2>Contact</h2>
+        <p>Email: c.achilles53@gmail.com</p>
+        <p>Phone: +44 7743 468 226</p>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/connor-achilles-7ab612275utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+            <img src="Assets/LinkedInLogo.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.instagram.com/c.achilles.53?igsh=MTV6OHhmMHIzZzI4ZQ%3D%3D&utm_source=qr">
+            <img src="Assets/InstagramLogo.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/connor.jackson.1694">
+            <img src="Assets/FacebookLogo.png" alt="Facebook">
+          </a>
+        </div>
+      </section>
+
+    </div> <!-- end #map -->
+
+    <!-- Global arrows (fixed, outside the map so they are always clickable) -->
+    <button class="arrowLeft" aria-label="Previous section">
+      <img src="Assets/left.png" alt="Previous">
+    </button>
+    <button class="arrowRight" aria-label="Next section">
+      <img src="Assets/right.png" alt="Next">
+    </button>
+
+  </div> <!-- end #game-container -->
+
+  <script src="script.js"></script>
+</body>
+</html>
